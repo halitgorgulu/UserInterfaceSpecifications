@@ -1,0 +1,28 @@
+# User Interface Specifications
+
+- User management system page should be accessible by people with administrative authority and this page should perform the following scenarios:
+  - User table component:
+    - This component is the user table, which is the main component of the system. This table should contain ID, User Name, Email, Enabled columns.
+    - This table should be filterable and sortable according to the values of all the columns. Also, by default, ID values should be in ascending order.
+    - This table should be located on the left, dividing the dashboard in two side.
+   - Hide Disabled User checkbox:
+     - The style of this button should be check box.
+     - This checkbox component should be located next to the new user button and hide disabled users from the user table  if clicked.
+     - Disabled users should appear in the user table if not clicked.
+  - New User button:
+    - This button should open a form structure for us to enter a new user that will be opened next to our existing user table.
+    - The new user creation form should have the following questions types and styles:
+       - Username 
+       - Display Name
+       - Phone
+       - Email
+       - User Roles:
+          - In this question, there should be information text in the text box. "Select user roles..."
+          - User roles should be of 3 different types as Guest, Admin, SuperAdmin and should be designed as a select menu.
+          - These roles are for authorization purposes for system usage.
+       - Enabled:
+          - The style of this question should be check box.
+          - If the box is selected than the user should be set as enabled, else the user should be set as disabled.
+   - Save User button:
+      - This button should appear at the right top of the form if the new user button has been clicked.
+      - After filling the required information in the form, when this button is clicked, the user should be added to the system and appear in the user table.
